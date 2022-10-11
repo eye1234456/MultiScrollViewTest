@@ -1,0 +1,24 @@
+PODS:
+  - JXCategoryView (1.6.1)
+  - MJRefresh (3.7.5)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - JXCategoryView
+  - MJRefresh
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - JXCategoryView
+    - MJRefresh
+    - SnapKit
+
+SPEC CHECKSUMS:
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: dffb74b6eab7c579dba035d5fcd0de6148689c36
+
+COCOAPODS: 1.11.3

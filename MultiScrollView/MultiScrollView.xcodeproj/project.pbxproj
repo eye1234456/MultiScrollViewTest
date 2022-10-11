@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001E962428F593340095EFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E962328F593340095EFBF /* AppDelegate.swift */; };
+		001E962628F593340095EFBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E962528F593340095EFBF /* SceneDelegate.swift */; };
+		001E962828F593340095EFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E962728F593340095EFBF /* ViewController.swift */; };
+		001E962B28F593340095EFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001E962928F593340095EFBF /* Main.storyboard */; };
+		001E962D28F593360095EFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001E962C28F593360095EFBF /* Assets.xcassets */; };
+		001E963028F593360095EFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001E962E28F593360095EFBF /* LaunchScreen.storyboard */; };
+		001E963B28F593370095EFBF /* MultiScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E963A28F593370095EFBF /* MultiScrollViewTests.swift */; };
+		001E964528F593370095EFBF /* MultiScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E964428F593370095EFBF /* MultiScrollViewUITests.swift */; };
+		001E964728F593370095EFBF /* MultiScrollViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E964628F593370095EFBF /* MultiScrollViewUITestsLaunchTests.swift */; };
+		001E965528F594040095EFBF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965428F594040095EFBF /* Protocols.swift */; };
+		001E965828F598370095EFBF /* LockVerMainScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965728F598370095EFBF /* LockVerMainScrollController.swift */; };
+		001E965A28F5A3310095EFBF /* LockVerSubScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */; };
+		001E965C28F5A5070095EFBF /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965B28F5A5070095EFBF /* CommonDefine.swift */; };
+		285FA8C949AF3A607AB45B7C /* Pods_MultiScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D444A49954B3B872EA14D59 /* Pods_MultiScrollViewTests.framework */; };
+		8183BF57129A8A82788F46F1 /* Pods_MultiScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD913885946BE7FB196A9F1A /* Pods_MultiScrollView.framework */; };
+		A07D3D213E88309298977AC5 /* Pods_MultiScrollView_MultiScrollViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91812F642D71A914E6ED38D9 /* Pods_MultiScrollView_MultiScrollViewUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001E963728F593370095EFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001E961828F593340095EFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001E961F28F593340095EFBF;
+			remoteInfo = MultiScrollView;
+		};
+		001E964128F593370095EFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001E961828F593340095EFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001E961F28F593340095EFBF;
+			remoteInfo = MultiScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001E962028F593340095EFBF /* MultiScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		001E962328F593340095EFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		001E962528F593340095EFBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		001E962728F593340095EFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		001E962A28F593340095EFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		001E962C28F593360095EFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001E962F28F593360095EFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		001E963128F593360095EFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001E963628F593370095EFBF /* MultiScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001E963A28F593370095EFBF /* MultiScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiScrollViewTests.swift; sourceTree = "<group>"; };
+		001E964028F593370095EFBF /* MultiScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001E964428F593370095EFBF /* MultiScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiScrollViewUITests.swift; sourceTree = "<group>"; };
+		001E964628F593370095EFBF /* MultiScrollViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiScrollViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		001E965428F594040095EFBF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		001E965728F598370095EFBF /* LockVerMainScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVerMainScrollController.swift; sourceTree = "<group>"; };
+		001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVerSubScrollController.swift; sourceTree = "<group>"; };
+		001E965B28F5A5070095EFBF /* CommonDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefine.swift; sourceTree = "<group>"; };
+		00660548106EFD6FBC8666D8 /* Pods-MultiScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollViewTests.debug.xcconfig"; path = "Target Support Files/Pods-MultiScrollViewTests/Pods-MultiScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51B0716063DA9C58E20706EF /* Pods-MultiScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollView.debug.xcconfig"; path = "Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		5D444A49954B3B872EA14D59 /* Pods_MultiScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EA085D9EF68D9F8C941D50 /* Pods-MultiScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollViewTests.release.xcconfig"; path = "Target Support Files/Pods-MultiScrollViewTests/Pods-MultiScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B6A6DEC61E9F1A498C6FD42 /* Pods-MultiScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollView.release.xcconfig"; path = "Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		91812F642D71A914E6ED38D9 /* Pods_MultiScrollView_MultiScrollViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiScrollView_MultiScrollViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9367D93094C026B12AF38747 /* Pods-MultiScrollView-MultiScrollViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollView-MultiScrollViewUITests.release.xcconfig"; path = "Target Support Files/Pods-MultiScrollView-MultiScrollViewUITests/Pods-MultiScrollView-MultiScrollViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD913885946BE7FB196A9F1A /* Pods_MultiScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81CF463712DC5E6FC68B579 /* Pods-MultiScrollView-MultiScrollViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollView-MultiScrollViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-MultiScrollView-MultiScrollViewUITests/Pods-MultiScrollView-MultiScrollViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001E961D28F593340095EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8183BF57129A8A82788F46F1 /* Pods_MultiScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963328F593370095EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285FA8C949AF3A607AB45B7C /* Pods_MultiScrollViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963D28F593370095EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07D3D213E88309298977AC5 /* Pods_MultiScrollView_MultiScrollViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001E961728F593340095EFBF = {
+			isa = PBXGroup;
+			children = (
+				001E962228F593340095EFBF /* MultiScrollView */,
+				001E963928F593370095EFBF /* MultiScrollViewTests */,
+				001E964328F593370095EFBF /* MultiScrollViewUITests */,
+				001E962128F593340095EFBF /* Products */,
+				B5E3E3216BD6012884745A9F /* Pods */,
+				6D27BF63C28815E4EE774B34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		001E962128F593340095EFBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001E962028F593340095EFBF /* MultiScrollView.app */,
+				001E963628F593370095EFBF /* MultiScrollViewTests.xctest */,
+				001E964028F593370095EFBF /* MultiScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001E962228F593340095EFBF /* MultiScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				001E965628F598080095EFBF /* Codes */,
+				001E965328F593EE0095EFBF /* Common */,
+				001E962328F593340095EFBF /* AppDelegate.swift */,
+				001E962528F593340095EFBF /* SceneDelegate.swift */,
+				001E962728F593340095EFBF /* ViewController.swift */,
+				001E962928F593340095EFBF /* Main.storyboard */,
+				001E962C28F593360095EFBF /* Assets.xcassets */,
+				001E962E28F593360095EFBF /* LaunchScreen.storyboard */,
+				001E963128F593360095EFBF /* Info.plist */,
+			);
+			path = MultiScrollView;
+			sourceTree = "<group>";
+		};
+		001E963928F593370095EFBF /* MultiScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				001E963A28F593370095EFBF /* MultiScrollViewTests.swift */,
+			);
+			path = MultiScrollViewTests;
+			sourceTree = "<group>";
+		};
+		001E964328F593370095EFBF /* MultiScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				001E964428F593370095EFBF /* MultiScrollViewUITests.swift */,
+				001E964628F593370095EFBF /* MultiScrollViewUITestsLaunchTests.swift */,
+			);
+			path = MultiScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		001E965328F593EE0095EFBF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				001E965428F594040095EFBF /* Protocols.swift */,
+				001E965B28F5A5070095EFBF /* CommonDefine.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		001E965628F598080095EFBF /* Codes */ = {
+			isa = PBXGroup;
+			children = (
+				001E965728F598370095EFBF /* LockVerMainScrollController.swift */,
+				001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */,
+			);
+			path = Codes;
+			sourceTree = "<group>";
+		};
+		6D27BF63C28815E4EE774B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD913885946BE7FB196A9F1A /* Pods_MultiScrollView.framework */,
+				91812F642D71A914E6ED38D9 /* Pods_MultiScrollView_MultiScrollViewUITests.framework */,
+				5D444A49954B3B872EA14D59 /* Pods_MultiScrollViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5E3E3216BD6012884745A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51B0716063DA9C58E20706EF /* Pods-MultiScrollView.debug.xcconfig */,
+				6B6A6DEC61E9F1A498C6FD42 /* Pods-MultiScrollView.release.xcconfig */,
+				D81CF463712DC5E6FC68B579 /* Pods-MultiScrollView-MultiScrollViewUITests.debug.xcconfig */,
+				9367D93094C026B12AF38747 /* Pods-MultiScrollView-MultiScrollViewUITests.release.xcconfig */,
+				00660548106EFD6FBC8666D8 /* Pods-MultiScrollViewTests.debug.xcconfig */,
+				67EA085D9EF68D9F8C941D50 /* Pods-MultiScrollViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		001E961F28F593340095EFBF /* MultiScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001E964A28F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollView" */;
+			buildPhases = (
+				CBF5781DF31CFBFC961D28AD /* [CP] Check Pods Manifest.lock */,
+				001E961C28F593340095EFBF /* Sources */,
+				001E961D28F593340095EFBF /* Frameworks */,
+				001E961E28F593340095EFBF /* Resources */,
+				A2333E0FFBF6993F35AF8D37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiScrollView;
+			productName = MultiScrollView;
+			productReference = 001E962028F593340095EFBF /* MultiScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		001E963528F593370095EFBF /* MultiScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001E964D28F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollViewTests" */;
+			buildPhases = (
+				BB194AD45A496ABF4767F5A8 /* [CP] Check Pods Manifest.lock */,
+				001E963228F593370095EFBF /* Sources */,
+				001E963328F593370095EFBF /* Frameworks */,
+				001E963428F593370095EFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001E963828F593370095EFBF /* PBXTargetDependency */,
+			);
+			name = MultiScrollViewTests;
+			productName = MultiScrollViewTests;
+			productReference = 001E963628F593370095EFBF /* MultiScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		001E963F28F593370095EFBF /* MultiScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001E965028F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollViewUITests" */;
+			buildPhases = (
+				1722FED5B4032A55DF273827 /* [CP] Check Pods Manifest.lock */,
+				001E963C28F593370095EFBF /* Sources */,
+				001E963D28F593370095EFBF /* Frameworks */,
+				001E963E28F593370095EFBF /* Resources */,
+				464433F72B22A294544CDF74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001E964228F593370095EFBF /* PBXTargetDependency */,
+			);
+			name = MultiScrollViewUITests;
+			productName = MultiScrollViewUITests;
+			productReference = 001E964028F593370095EFBF /* MultiScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001E961828F593340095EFBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					001E961F28F593340095EFBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					001E963528F593370095EFBF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 001E961F28F593340095EFBF;
+					};
+					001E963F28F593370095EFBF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 001E961F28F593340095EFBF;
+					};
+				};
+			};
+			buildConfigurationList = 001E961B28F593340095EFBF /* Build configuration list for PBXProject "MultiScrollView" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 001E961728F593340095EFBF;
+			productRefGroup = 001E962128F593340095EFBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				001E961F28F593340095EFBF /* MultiScrollView */,
+				001E963528F593370095EFBF /* MultiScrollViewTests */,
+				001E963F28F593370095EFBF /* MultiScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001E961E28F593340095EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001E963028F593360095EFBF /* LaunchScreen.storyboard in Resources */,
+				001E962D28F593360095EFBF /* Assets.xcassets in Resources */,
+				001E962B28F593340095EFBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963428F593370095EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963E28F593370095EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1722FED5B4032A55DF273827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiScrollView-MultiScrollViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		464433F72B22A294544CDF74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView-MultiScrollViewUITests/Pods-MultiScrollView-MultiScrollViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView-MultiScrollViewUITests/Pods-MultiScrollView-MultiScrollViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView-MultiScrollViewUITests/Pods-MultiScrollView-MultiScrollViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2333E0FFBF6993F35AF8D37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB194AD45A496ABF4767F5A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiScrollViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF5781DF31CFBFC961D28AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001E961C28F593340095EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001E965828F598370095EFBF /* LockVerMainScrollController.swift in Sources */,
+				001E962828F593340095EFBF /* ViewController.swift in Sources */,
+				001E965A28F5A3310095EFBF /* LockVerSubScrollController.swift in Sources */,
+				001E965C28F5A5070095EFBF /* CommonDefine.swift in Sources */,
+				001E962428F593340095EFBF /* AppDelegate.swift in Sources */,
+				001E962628F593340095EFBF /* SceneDelegate.swift in Sources */,
+				001E965528F594040095EFBF /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963228F593370095EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001E963B28F593370095EFBF /* MultiScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001E963C28F593370095EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001E964728F593370095EFBF /* MultiScrollViewUITestsLaunchTests.swift in Sources */,
+				001E964528F593370095EFBF /* MultiScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001E963828F593370095EFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001E961F28F593340095EFBF /* MultiScrollView */;
+			targetProxy = 001E963728F593370095EFBF /* PBXContainerItemProxy */;
+		};
+		001E964228F593370095EFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001E961F28F593340095EFBF /* MultiScrollView */;
+			targetProxy = 001E964128F593370095EFBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		001E962928F593340095EFBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001E962A28F593340095EFBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		001E962E28F593360095EFBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001E962F28F593360095EFBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		001E964828F593370095EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		001E964928F593370095EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		001E964B28F593370095EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B0716063DA9C58E20706EF /* Pods-MultiScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiScrollView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		001E964C28F593370095EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6A6DEC61E9F1A498C6FD42 /* Pods-MultiScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiScrollView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		001E964E28F593370095EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00660548106EFD6FBC8666D8 /* Pods-MultiScrollViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiScrollView.app/MultiScrollView";
+			};
+			name = Debug;
+		};
+		001E964F28F593370095EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EA085D9EF68D9F8C941D50 /* Pods-MultiScrollViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiScrollView.app/MultiScrollView";
+			};
+			name = Release;
+		};
+		001E965128F593370095EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81CF463712DC5E6FC68B579 /* Pods-MultiScrollView-MultiScrollViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiScrollView;
+			};
+			name = Debug;
+		};
+		001E965228F593370095EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9367D93094C026B12AF38747 /* Pods-MultiScrollView-MultiScrollViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hello.xx.oc.MultiScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001E961B28F593340095EFBF /* Build configuration list for PBXProject "MultiScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001E964828F593370095EFBF /* Debug */,
+				001E964928F593370095EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001E964A28F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001E964B28F593370095EFBF /* Debug */,
+				001E964C28F593370095EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001E964D28F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001E964E28F593370095EFBF /* Debug */,
+				001E964F28F593370095EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001E965028F593370095EFBF /* Build configuration list for PBXNativeTarget "MultiScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001E965128F593370095EFBF /* Debug */,
+				001E965228F593370095EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001E961828F593340095EFBF /* Project object */;
+}
