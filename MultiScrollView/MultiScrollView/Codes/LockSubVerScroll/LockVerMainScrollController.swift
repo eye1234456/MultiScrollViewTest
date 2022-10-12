@@ -18,9 +18,9 @@ class LockVerMainScrollController : UIViewController {
         $0.backgroundColor = .clear
         $0.showsVerticalScrollIndicator = false
         $0.showsHorizontalScrollIndicator = false
-        if #available(iOS 11.0, *) {
-            $0.contentInsetAdjustmentBehavior = .never
-        }
+//        if #available(iOS 11.0, *) {
+//            $0.contentInsetAdjustmentBehavior = .always
+//        }
         $0.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNewData))
     }
     
@@ -72,11 +72,12 @@ class LockVerMainScrollController : UIViewController {
     }
     
     func setupUI() {
+        edgesForExtendedLayout = [.bottom]
         view.backgroundColor = .white
+        title = "LockVerMainScrollController"
         view.addSubview(mainScrollView)
         mainScrollView.snp.makeConstraints { make in
-            make.top.equalTo(kTopHeight)
-            make.left.right.bottom.equalToSuperview()
+            make.top.left.right.bottom.equalToSuperview()
         }
         let topView1 = UIView().then{
             $0.backgroundColor = .orange
@@ -139,6 +140,7 @@ extension LockVerMainScrollController: UIScrollViewDelegate {
             let offsetY = mainScrollView.contentOffset.y
             // 底部悬浮部分的容器内容一般高度是固定的
             let topHeight = mainScrollView.contentSize.height - bottomHeight
+            print(">>==>> main offsetY:\(offsetY) topHeight:\(topHeight)")
             if offsetY >= topHeight {
               // 顶部已经滚动到不可见了，该到底部内容滚动的了
                 if offsetY > topHeight {
@@ -193,10 +195,10 @@ extension LockVerMainScrollController: JXCategoryListContainerViewDelegate {
                 if subVCList.count <= i {
                     let vc = LockVerSubScrollController()
                     vc.paramsDict = titleDictList[i]
-                    vc.mainScrollCallback = {
-                        let offsetY = $0.contentOffset.y
-                        let oldOffsetY = self.mainScrollView.contentOffset.y
-                        self.mainScrollView.contentOffset.y = oldOffsetY+offsetY
+                    vc.mainScrollCallback = { [weak self] (scrollView) in
+                        let offsetY = scrollView.contentOffset.y
+                        let oldOffsetY = self?.mainScrollView.contentOffset.y ?? 0
+                        self?.mainScrollView.contentOffset.y = oldOffsetY+offsetY
                     }
                     subVCList.append(vc)
                 }

@@ -20,6 +20,10 @@
 		001E965828F598370095EFBF /* LockVerMainScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965728F598370095EFBF /* LockVerMainScrollController.swift */; };
 		001E965A28F5A3310095EFBF /* LockVerSubScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */; };
 		001E965C28F5A5070095EFBF /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965B28F5A5070095EFBF /* CommonDefine.swift */; };
+		001E965F28F6A2540095EFBF /* LockVerMainTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E965E28F6A2540095EFBF /* LockVerMainTableController.swift */; };
+		001E966428F6A47D0095EFBF /* SubControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E966328F6A47D0095EFBF /* SubControllerTableViewCell.swift */; };
+		001E966628F6AB3B0095EFBF /* TwoOffsetMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E966528F6AB3B0095EFBF /* TwoOffsetMainViewController.swift */; };
+		001E966828F6ACBF0095EFBF /* TwoOffsetSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E966728F6ACBF0095EFBF /* TwoOffsetSubViewController.swift */; };
 		285FA8C949AF3A607AB45B7C /* Pods_MultiScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D444A49954B3B872EA14D59 /* Pods_MultiScrollViewTests.framework */; };
 		8183BF57129A8A82788F46F1 /* Pods_MultiScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD913885946BE7FB196A9F1A /* Pods_MultiScrollView.framework */; };
 		A07D3D213E88309298977AC5 /* Pods_MultiScrollView_MultiScrollViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91812F642D71A914E6ED38D9 /* Pods_MultiScrollView_MultiScrollViewUITests.framework */; };
@@ -60,6 +64,10 @@
 		001E965728F598370095EFBF /* LockVerMainScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVerMainScrollController.swift; sourceTree = "<group>"; };
 		001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVerSubScrollController.swift; sourceTree = "<group>"; };
 		001E965B28F5A5070095EFBF /* CommonDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefine.swift; sourceTree = "<group>"; };
+		001E965E28F6A2540095EFBF /* LockVerMainTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVerMainTableController.swift; sourceTree = "<group>"; };
+		001E966328F6A47D0095EFBF /* SubControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubControllerTableViewCell.swift; sourceTree = "<group>"; };
+		001E966528F6AB3B0095EFBF /* TwoOffsetMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoOffsetMainViewController.swift; sourceTree = "<group>"; };
+		001E966728F6ACBF0095EFBF /* TwoOffsetSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoOffsetSubViewController.swift; sourceTree = "<group>"; };
 		00660548106EFD6FBC8666D8 /* Pods-MultiScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollViewTests.debug.xcconfig"; path = "Target Support Files/Pods-MultiScrollViewTests/Pods-MultiScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		51B0716063DA9C58E20706EF /* Pods-MultiScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiScrollView.debug.xcconfig"; path = "Target Support Files/Pods-MultiScrollView/Pods-MultiScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 		5D444A49954B3B872EA14D59 /* Pods_MultiScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,10 +174,30 @@
 		001E965628F598080095EFBF /* Codes */ = {
 			isa = PBXGroup;
 			children = (
-				001E965728F598370095EFBF /* LockVerMainScrollController.swift */,
-				001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */,
+				001E966028F6A2640095EFBF /* TwoVerScrollOffset */,
+				001E965D28F6A2120095EFBF /* LockSubVerScroll */,
 			);
 			path = Codes;
+			sourceTree = "<group>";
+		};
+		001E965D28F6A2120095EFBF /* LockSubVerScroll */ = {
+			isa = PBXGroup;
+			children = (
+				001E965728F598370095EFBF /* LockVerMainScrollController.swift */,
+				001E965928F5A3310095EFBF /* LockVerSubScrollController.swift */,
+				001E965E28F6A2540095EFBF /* LockVerMainTableController.swift */,
+				001E966328F6A47D0095EFBF /* SubControllerTableViewCell.swift */,
+			);
+			path = LockSubVerScroll;
+			sourceTree = "<group>";
+		};
+		001E966028F6A2640095EFBF /* TwoVerScrollOffset */ = {
+			isa = PBXGroup;
+			children = (
+				001E966528F6AB3B0095EFBF /* TwoOffsetMainViewController.swift */,
+				001E966728F6ACBF0095EFBF /* TwoOffsetSubViewController.swift */,
+			);
+			path = TwoVerScrollOffset;
 			sourceTree = "<group>";
 		};
 		6D27BF63C28815E4EE774B34 /* Frameworks */ = {
@@ -438,9 +466,13 @@
 				001E962828F593340095EFBF /* ViewController.swift in Sources */,
 				001E965A28F5A3310095EFBF /* LockVerSubScrollController.swift in Sources */,
 				001E965C28F5A5070095EFBF /* CommonDefine.swift in Sources */,
+				001E965F28F6A2540095EFBF /* LockVerMainTableController.swift in Sources */,
 				001E962428F593340095EFBF /* AppDelegate.swift in Sources */,
 				001E962628F593340095EFBF /* SceneDelegate.swift in Sources */,
 				001E965528F594040095EFBF /* Protocols.swift in Sources */,
+				001E966628F6AB3B0095EFBF /* TwoOffsetMainViewController.swift in Sources */,
+				001E966828F6ACBF0095EFBF /* TwoOffsetSubViewController.swift in Sources */,
+				001E966428F6A47D0095EFBF /* SubControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

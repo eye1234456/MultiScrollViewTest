@@ -16,9 +16,20 @@ class ViewController: UIViewController {
     }
     
     lazy var dataList: [[String:Any]] = [
-        ["title":"Normal 锁住竖直方向子scrollView的滚动",
-         "clz":LockVerMainScrollController.self
+        [
+            "title":"Normal 锁住竖直方向子scrollView的滚动",
+            "clz":LockVerMainScrollController.self
+        ],
+        [
+            "title":"Normal 锁住竖直方向子tableView的滚动",
+            "clz":LockVerMainTableController.self
+        ],
+        [
+            "title":"响应2个手势tableView的滚动",
+            "clz":TwoOffsetMainViewController.self
         ]
+        
+        
     ]
 
     override func viewDidLoad() {

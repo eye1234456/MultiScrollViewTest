@@ -90,6 +90,7 @@ extension LockVerSubScrollController : UICollectionViewDataSource, UICollectionV
 extension LockVerSubScrollController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
+        print(">>==>> sub offsetY:\(offsetY)")
         if offsetY <= 0 {
             // 往下拉，且顶部内容已经全部看见的情况，用于触发主scrollVew往下拉，且锁住子scrollView不能滑动
             if let callback = mainScrollCallback {

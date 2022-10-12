@@ -14,6 +14,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 15.0, *) {
+                let appperance = UINavigationBarAppearance()
+                //添加背景色
+                appperance.backgroundColor = UIColor.red;
+                appperance.shadowImage = UIImage()
+                appperance.shadowColor = nil
+                //设置字体颜色大小
+                appperance.titleTextAttributes = [.foregroundColor: UIColor.white]
+                
+                UINavigationBar.appearance().standardAppearance = appperance;
+                UINavigationBar.appearance().scrollEdgeAppearance = appperance;
+                UINavigationBar.appearance().compactAppearance = appperance;
+                UINavigationBar.appearance().compactScrollEdgeAppearance = appperance;
+        }else {
+            UINavigationBar.appearance().tintColor = .red //前景色，按钮颜色
+            UINavigationBar.appearance().barTintColor = .white //背景色，导航条背景色
+            UINavigationBar.appearance().isTranslucent = false // 导航条背景是否透明
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        }
+        
         return true
     }
 
